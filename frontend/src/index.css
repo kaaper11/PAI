@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+    --color-primary: #8ec5ff;   /* blue-300 – kolor akcentów, przycisków */
+    --color-secondary: #d1d5dc; /* gray-300 – tło strony */
+    --color-accent: #ffffff;    /* white – kolor tekstu/tła elementów */
+
+    --color-primary-light: color-mix(in srgb, var(--color-primary), white 30%);
+    --color-primary-dark: color-mix(in srgb, var(--color-primary), black 25%);
+    --color-primary-hover: color-mix(in srgb, var(--color-primary), black 10%);
+    --color-primary-transparent: color-mix(in srgb, var(--color-primary), transparent 60%);
+
+    --color-secondary-light: color-mix(in srgb, var(--color-secondary), white 20%);
+    --color-secondary-dark: color-mix(in srgb, var(--color-secondary), black 25%);
+
+    --color-accent-light: color-mix(in srgb, var(--color-accent), white 10%);
+    --color-accent-dark: color-mix(in srgb, var(--color-accent), black 15%);
+
+    --color-border: var(--color-primary-dark);
+    --color-text: var(--color-primary-dark);
+    --color-placeholder: var(--color-primary-transparent);
+    --color-shadow: color-mix(in srgb, var(--color-primary), black 60%);
+}
